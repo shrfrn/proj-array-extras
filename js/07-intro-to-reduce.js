@@ -1,5 +1,4 @@
 'use strict'
-document.querySelector('h3').innerText = 'Array.reduce()'
 
 // Array.reduce() reduces the array to single value
 
@@ -27,3 +26,7 @@ console.log('sum is:', sum)
 
 const min = nums.reduce((acc, num) => (acc < num) ? acc : num)
 console.log('Min:', min)
+
+{
+    document.querySelector('h3').innerText = 'Array.reduce()'
+}

@@ -1,5 +1,4 @@
 'use strict'
-document.querySelector('h3').innerText = 'Array.map()'
 
 // Array.map() returns an new array with the same length, 
 // of transformed elements
@@ -24,3 +23,7 @@ var names  = ['Juni', 'Muki', 'Kuni']
 // :5 Create an array of <li>'s from an array of strings
 
 // :6 Let's implement map()
+
+{
+    document.querySelector('h3').innerText = 'Array.map()'
+}

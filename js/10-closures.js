@@ -1,5 +1,4 @@
 'use strict'
-document.querySelector('h3').innerText = 'Closures'
 
 // :1 Closure with setTimeout()
 
@@ -52,4 +51,8 @@ function createPrivateVar() {
         get() { return val },
         type() { return typeof val }
      }
+ }
+
+ {
+    document.querySelector('h3').innerText = 'Closures'
  }

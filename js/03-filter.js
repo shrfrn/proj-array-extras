@@ -1,5 +1,4 @@
 'use strict'
-document.querySelector('h3').innerText = 'Array.filter()'
 
 var nums = [8, 9, 2, 6, 7, 11, 14]
 
@@ -23,3 +22,7 @@ var students = [
 // :6 Copy an array with filter
 
 // :6 Let's implement filter()
+
+{
+    document.querySelector('h3').innerText = 'Array.filter()'
+}

@@ -1,5 +1,4 @@
 'use strict'
-document.querySelector('h3').innerText = 'Array.every() & Array.some()'
 
 // Array.every() - Do ALL items in an array meet a condition?
 // Array.some() - Does ANY item in an array meet a condition?
@@ -19,3 +18,7 @@ var items = [7, 13, 5, 3, 11, 9]
 // :5 Can this be done with Array.forEach()?
 
 // :6 Let's implement every & some
+
+{
+    document.querySelector('h3').innerText = 'Array.every() & Array.some()'
+}

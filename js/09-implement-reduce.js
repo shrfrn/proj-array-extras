@@ -1,5 +1,4 @@
 'use strict'
-document.querySelector('h3').innerText = 'Array.reduce()'
 
 const vals = [4, 7, 1]
 function accumulateSum(acc, num) {
@@ -35,4 +34,8 @@ function myFullReduce(items, func, accInitialVal) {
         acc = func(acc, item)
     }
     return acc
+}
+
+{
+    document.querySelector('h3').innerText = 'Array.reduce()'
 }

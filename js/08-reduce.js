@@ -1,5 +1,4 @@
 'use strict'
-document.querySelector('h3').innerText = 'Array.reduce()'
 
 // :1 Convert an array of words to a word frequency map
 
@@ -58,3 +57,7 @@ function mapUsingReduce(nums) {
 //         return acc
 //     }, [])
 // }
+
+{
+    document.querySelector('h3').innerText = 'Array.reduce()'
+}

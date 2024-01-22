@@ -1,5 +1,4 @@
 'use strict'
-document.querySelector('h3').innerText = 'Array.forEach()'
 
 function print(item, idx) {
     console.log(idx, ':', item)
@@ -27,3 +26,7 @@ var players = [
 // :5 Increment all player scores by one using a Array.forEach()
 
 // :6 Let's implement forEach
+
+{
+    document.querySelector('h3').innerText = 'Array.forEach()'
+}

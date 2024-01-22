@@ -1,5 +1,4 @@
 'use strict'
-document.querySelector('h3').innerText = 'Array.forEach()'
 
 function handleName(n, idx) {
 	console.log('Now Handling: ', n, idx)
@@ -23,4 +22,8 @@ function init() {
 	// :3 Array iteration using Array.forEach() with an anonymous function
         
     // :4 Array iteration using Array.forEach() with an arrow function
+}
+
+{
+    document.querySelector('h3').innerText = 'Array.forEach()'
 }

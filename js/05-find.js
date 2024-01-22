@@ -34,7 +34,6 @@ console.log('player: ', player)
 
 // Array.findIndex() returns the index of the first item in an array 
 // which matches a condition
-document.querySelector('h3').innerText = 'Array.find() & Array.findIndex()'
 
 // :1 Finding a player's index by id with a for loop
 
@@ -55,3 +54,7 @@ console.log('playerIdx: ', playerIdx)
 // :4 Removing a player by id with Array.filter()
 
 // :5 Let's implement find & findIndex
+
+{
+    document.querySelector('h3').innerText = 'Array.find() & Array.findIndex()'
+}
