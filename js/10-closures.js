@@ -2,8 +2,7 @@
 
 // :1 Closure with setTimeout()
 
-function init() {
-    console.log('Init')
+function closureDemo() {
 	var notHereSoon = 9
 	var count = 10
     
@@ -31,7 +30,7 @@ function momentaryHide(ms) {
 var privateVar = createPrivateVar() 
 
 function createPrivateVar() {
-    
+
     var val
 
      return {
@@ -51,8 +50,22 @@ function createPrivateVar() {
         get() { return val },
         type() { return typeof val }
      }
- }
+}
 
- {
+// :4 Classic closure pitfall
+
+// closurePitfall()
+
+function closurePitfall() {
+    const elBtns = document.querySelectorAll('button')
+
+    for (var i = 0; i < elBtns.length; i++) {
+      console.log('i', i)
+      elBtns[i].onclick = () => console.log('Clicked!, i:', i)
+    }
+}
+
+{
+    document.querySelector('.closure-btns').classList.remove('hidden')
     document.querySelector('h3').innerText = 'Closures'
- }
+}
