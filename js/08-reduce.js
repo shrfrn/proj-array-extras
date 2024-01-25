@@ -2,14 +2,17 @@
 
 // :1 Convert an array of words to a word frequency map
 
-// mapUsingReduce()
-
 const str = 'Puki Ben David and Muki Ben David'
-const wordCountMap = str.split(' ').reduce((acc, word) => {
-    if(!acc[word]) acc[word] = 0
-    acc[word]++
-    return acc
-}, {})
+// generateWordCountMap(str)
+
+function generateWordCountMap(str){
+    const wordCountMap = str.split(' ').reduce((acc, word) => {
+        if(!acc[word]) acc[word] = 0
+        acc[word]++
+        return acc
+    }, {})
+    console.log(wordCountMap)
+}
 
 // :2 Convert an array of students to an object
 
@@ -31,8 +34,8 @@ const students = [
 // const studentMap = keyBy(students, 'name')
 // console.log(studentMap)
 
-const studentMap = keyBy(students, 'id')
-console.log(studentMap)
+// const studentMap = keyBy(students, 'id')
+// console.log(studentMap)
 
 function keyBy(students, key) {
     return students.reduce((acc, student) => {
@@ -56,15 +59,6 @@ function mapUsingReduce(nums) {
         return acc
     }, [])
 }
-
-// const res = mapUsingReduce(nums, num => num ** 2)
-
-// function mapUsingReduce(nums, func) {
-//     return nums.reduce((acc, num) => {
-//         acc.push(func(num))
-//         return acc
-//     }, [])
-// }
 
 {
     document.querySelector('h3').innerText = 'Array.reduce()'

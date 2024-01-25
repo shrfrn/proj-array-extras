@@ -8,8 +8,8 @@ function accumulateSum(acc, num) {
 
 // :1 A basic implementation
 
-var res = mySimpleReduce(vals, accumulateSum, 0)
-console.log('Got: ', res)
+// var res = mySimpleReduce(vals, accumulateSum, 0)
+// console.log('Got: ', res)
 
 function mySimpleReduce(items, func, accInitialVal) {
     var acc = accInitialVal

@@ -6,12 +6,17 @@ var nums = [3, 8, 1, 2]
 
 // :1 Summing an array with Array.reduce()
 
-var sum = nums.reduce((accumulator, num) => {
-    console.log('Num is', num, 'Acc is', accumulator)
-    return accumulator + num
-}, 0)
+// sumArrayWithReduce(nums)
 
-console.log('sum is:', sum)
+function sumArrayWithReduce(nums){
+    var sum = nums.reduce((accumulator, num) => {
+        console.log('Num is', num, 'Acc is', accumulator)
+        return accumulator + num
+    }, 0)
+    console.log('sum is:', sum)
+}
+
+
 
 // Here, we use a shorter syntax
 
@@ -24,19 +29,28 @@ console.log('sum is:', sum)
 // it is initialized with the first item in the array 
 // and array iteration starts with the second item
 
-const min = nums.reduce((acc, num) => (acc < num) ? acc : num)
-console.log('Min:', min)
+// findMinWithReduce(nums)
+
+function findMinWithReduce(nums) {
+    const min = nums.reduce((acc, num) => (acc < num) ? acc : num)
+    console.log('Min:', min)
+}
 
 // :3 Creating a map from an array
 
-const map = nums.reduce((acc, num) => {
-    if(num % 2 === 0) acc.even++ 
-    else acc.odd++
+// printMapFromArray(nums)
 
-    return acc
-}, { even: 0, odd: 0 })
+function printMapFromArray(nums){
 
-console.log('map: ', map)
+    const map = nums.reduce((acc, num) => {
+        if(num % 2 === 0) acc.even++ 
+        else acc.odd++
+    
+        return acc
+    }, { even: 0, odd: 0 })
+    
+    console.log('map: ', map)
+}
 
 {
     document.querySelector('h3').innerText = 'Array.reduce()'
