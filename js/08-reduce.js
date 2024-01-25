@@ -14,12 +14,20 @@ const wordCountMap = str.split(' ').reduce((acc, word) => {
 // :2 Convert an array of students to an object
 
 const students = [
-    { id: 101, name: 'Shimshon', avg: 90 },
-    { id: 102, name: 'Dori', avg: 60 },
-    { id: 103, name: 'Boris', avg: 70 },
-    { id: 104, name: 'Lenny', avg: 30 },
+    { id: 's101', name: 'Shimshon', avg: 90 },
+    { id: 's102', name: 'Dori', avg: 60 },
+    { id: 's103', name: 'Boris', avg: 70 },
+    { id: 's104', name: 'Lenny', avg: 30 },
 ]
 
+// const map = {
+//     s101: { id: 's101', name: 'Shimshon', avg: 90 },
+//     s102: { id: 's102', name: 'Dori', avg: 60 },
+//     s103: { id: 's103', name: 'Boris', avg: 70 },
+//     s104: { id: 's104', name: 'Lenny', avg: 30 },
+// }
+
+// const studentMap = keyBy(students, 'id')
 // const studentMap = keyBy(students, 'name')
 // console.log(studentMap)
 

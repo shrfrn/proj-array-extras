@@ -27,6 +27,17 @@ console.log('sum is:', sum)
 const min = nums.reduce((acc, num) => (acc < num) ? acc : num)
 console.log('Min:', min)
 
+// :3 Creating a map from an array
+
+const map = nums.reduce((acc, num) => {
+    if(num % 2 === 0) acc.even++ 
+    else acc.odd++
+
+    return acc
+}, { even: 0, odd: 0 })
+
+console.log('map: ', map)
+
 {
     document.querySelector('h3').innerText = 'Array.reduce()'
 }
