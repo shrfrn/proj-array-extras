@@ -38,6 +38,6 @@ const sortedUniqueVals = arr.flat().reduce((acc, item) => {
 
 console.log('sortedUniqueVals: ', sortedUniqueVals)
 
-// :3 Arraty.findLast()
+// :3 Array.findLast()
 
 // Find the last player with a score above 100
