@@ -18,11 +18,11 @@ function closureDemo() {
 
 // :2 Another example with setTimeout()
 
-function momentaryHide(ms) {
-	var el = document.querySelector('h1')
-	el.hidden = true
+function momentaryHighlight(ms) {
+	var el = document.querySelector('h3')
+	el.style.backgroundColor = 'orange'
 
-	setTimeout(() => el.hidden = false, ms)
+	setTimeout(() => el.style.backgroundColor = 'lightgray', ms)
 }
 
 // :3 Private variable (can't be accessed directly)
