@@ -3,17 +3,8 @@
 // :1 Closure with setTimeout()
 
 function closureDemo() {
-	var notHereSoon = 9
 	var count = 10
-    
-	setTimeout(() => {
-        console.log('count: ', count)
-		count = 100
-	}, 500)
-
-	setTimeout(() => {
-        console.log('Count is: ', count)
-	}, 1000)
+	setTimeout(() => console.log('Count is: ', count), 1000)
 }
 
 // :2 Another example with setTimeout()
