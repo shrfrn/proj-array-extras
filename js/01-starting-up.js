@@ -11,7 +11,6 @@ function init() {
 
 	// :1 Array iteration using a for loop
 
-	console.log('Using a for loop:')
 	for (var i = 0; i < names.length; i++) {
 		var currName = names[i]
 		console.log('Handling: ', currName, i)

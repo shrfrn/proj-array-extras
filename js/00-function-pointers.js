@@ -7,7 +7,7 @@ function foo() {
 }
 
 function newFoo(name) {
-    console.log('new foo with param: ' + name);
+    console.log('new foo with param: ' + name)
 }
 
 // foo()
