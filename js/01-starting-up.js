@@ -1,19 +1,19 @@
 'use strict'
 
-function handleName(n, idx) {
-	console.log('Now Handling: ', n, idx)
+function handleName(n, idx, names) {
+	console.log('Handling: ', n, idx, names)
 }
 
 init()
 
 function init() {
-	var names = ['Shai', 'Pai', 'Mai']
+	var names = ['Kai', 'Pai', 'Mai']
 
 	// :1 Array iteration using a for loop
 
 	for (var i = 0; i < names.length; i++) {
 		var currName = names[i]
-		console.log('Handling: ', currName, i)
+        handleName(currName, i, names)
 	}
 
 	// :2 Array iteration using Array.forEach() with a global function
