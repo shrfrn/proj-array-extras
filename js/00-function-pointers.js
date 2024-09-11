@@ -85,7 +85,7 @@ var nums = [13, 17, 10, 54]
 // runThisFunc(function(name1, name2) { console.log('Hi', name1, 'Dash from', name2) })
 // runThisFunc(function(name1, name2) { confirm(`Hi ${name1}, do you know ${name2}?`) })
 
-// runThisFunc((name1, name2) => confirm(`Hi ${name1}, do you know ${name2}?`))
+// runThisFunc((name1, name2) => { confirm(`Hi ${name1}, do you know ${name2}?`)
 //     var msg = `Hi ${name1}, do you know ${name2}?`
 //     return confirm(msg) 
 // })
