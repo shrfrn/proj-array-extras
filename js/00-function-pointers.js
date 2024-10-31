@@ -35,8 +35,8 @@ function newFoo(name) {
 // // original function is lost
 
 // goo = console.log
-// goo('goo calls console.log')
-// goo('goo calls console.log with another param', 8)
+// goo('activate console.log from goo')
+// goo('activate console.log from goo with another param', 8)
 // foo()
 
 // :2 Passing functions to other functions...
@@ -47,8 +47,9 @@ function runThisFunc(func) {
     var myName = 'Sharon'
     var yourName = 'Roni'
 
+    console.log('runThisFunc() is about to run', func)
     const res = func(myName, yourName)
-    console.log('res: ', res)
+    if (res) console.log('func returned', res)
 }
 
 // runThisFunc(foo)
@@ -57,7 +58,14 @@ function runThisFunc(func) {
 // :3 Passing anonymous functions to other functions
 
 // setTimeout(function () { console.log('Hi') }, 1000)
+
+// runThisFunc(function () { console.log('Hi there')})
 // runThisFunc(function (name) { console.log('Hi there', name)})
+// runThisFunc(function (from, to) { console.log(from, 'says Hi there to', to)})
+// runThisFunc(function (from, to) { 
+//     console.log(from, 'says Hi there to', to)
+//     return 8
+// })
 
 function forEach(arr, func) {
     for(var i = 0; i < arr.length; i++){
@@ -84,15 +92,14 @@ var nums = [13, 17, 10, 54]
 // runThisFunc(function(name) { console.log('Hi', name) })
 // runThisFunc(function(name1, name2) { console.log('Hi', name1, 'Dash from', name2) })
 // runThisFunc(function(name1, name2) { confirm(`Hi ${name1}, do you know ${name2}?`) })
-
-// runThisFunc((name1, name2) => { confirm(`Hi ${name1}, do you know ${name2}?`)
+// runThisFunc((name1, name2) => { 
 //     var msg = `Hi ${name1}, do you know ${name2}?`
 //     return confirm(msg) 
 // })
 
 // forEach(nums, function(item) { console.log('Hi', item) })
 
-// Let's inrement each number in nums by 1 -  This doesn't work... why?
+// Let's increment each number in nums by 1 -  This doesn't work... why?
 
 // forEach(nums, (num, idx, arr) => num += 1)
 // console.log('nums: ', nums)
@@ -101,7 +108,6 @@ var nums = [13, 17, 10, 54]
 
 // forEach(nums, (item, idx, arr) => arr[idx] += 1)
 // console.log('nums: ', nums)
-
 
 
 // Part 2 - Returning functions from functions
@@ -118,8 +124,8 @@ var nums = [13, 17, 10, 54]
 
 // console.log('x', x)
 
-function getFunc() {
-    var x = {}
+// function getFunc() {
+//     var x = {}
     // return 'hi'
     // return a function
     // return console.log
@@ -141,12 +147,12 @@ function getFunc() {
     // else          return  () => { alert('Hi arrow') }
 
     // // return a function which is defined inside another function
-    function insideGetFunc() {
-        console.log('I am defined inside insideGetFunc')
-    }
-    return insideGetFunc
+//     function insideGetFunc() {
+//         console.log('I am defined inside insideGetFunc')
+//     }
+//     return insideGetFunc
 
-}
+// }
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
