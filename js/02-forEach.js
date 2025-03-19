@@ -23,7 +23,7 @@ var players = [
 //     player.score++
 // }
 
-// :5 Increment all player scores by one using a Array.forEach()
+// :5 Increment all player scores by one using Array.forEach()
 
 // :6 Let's implement forEach
 

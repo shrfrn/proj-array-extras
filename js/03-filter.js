@@ -4,9 +4,9 @@ var nums = [8, 9, 2, 6, 7, 11, 14]
 
 // :1 Filter only even numbers using a for loop
 
-// :2 Filter only even numbers using a Array.forEach()
+// :2 Filter only even numbers using Array.forEach()
 
-// :3 Filter only even numbers using a Array.filter()
+// :3 Filter only even numbers using Array.filter()
 
 // :4 Filter only students with grades above 70 
 

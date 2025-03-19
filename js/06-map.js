@@ -7,7 +7,7 @@ var nums = [6, 9, 2, 5]
 
 // :1 Create an array of squared numbers using a for loop
 
-// :2 Create an array of squared numbers using a Array.map()
+// :2 Create an array of squared numbers using Array.map()
 
 // :3 Map an array of digits to an array of words
 

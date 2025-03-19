@@ -10,7 +10,7 @@ function newFoo(name) {
     console.log('new foo with param: ' + name)
 }
 
-// foo()
+foo()
 
 // // goo points to foo
 
